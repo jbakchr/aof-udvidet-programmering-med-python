@@ -3,7 +3,7 @@
 # variable
 skip_num = 3
 
-# datastructure - here a list
+# data structure - here a list
 awesome_folks = ["Anika", "Hassan", "Kent", "Jonas", "Mette", "Niels"]
 
 
