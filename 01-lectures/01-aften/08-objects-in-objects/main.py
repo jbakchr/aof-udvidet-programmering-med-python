@@ -11,6 +11,13 @@ class Course:
     def add_student(self, student):
         self.students.append(student)
 
+    def get_grade_average(self):
+        avg = 0
+        for student in self.students:
+            avg += student.get_grade()
+
+        return avg / len(self.students)
+
 
 class Student:
     def __init__(self, name, age, grade):
@@ -24,10 +31,12 @@ class Student:
 
 course = Course("Udvidet programmering med Python")
 
-s1 = Student("Anika", 24, 95)
-s2 = Student("Jonas", 41, 55)
-s3 = Student("Mette", 35, 95)
+s1 = Student("Anika", 24, 80)
+s2 = Student("Jonas", 41, 40)
+s3 = Student("Mette", 35, 80)
 
 course.add_student(s1)
 course.add_student(s2)
 course.add_student(s3)
+
+print(course.get_grade_average())
