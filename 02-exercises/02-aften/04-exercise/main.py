@@ -1,15 +1,16 @@
 """
-Exercise 4
+Exercise 3
 
-Based on your "Employer" and "Employee" classes do the following:
+Firstly, create these 2 classes:
+- An "Employer" class
+- An "Employee" class
 
-Add a "get_average_salary" method to the "Employer" class that returns the average salary.
+The "Employer" class should:
+- have a class attribute called "employees" set to an empty list
+- have its "init" take a "name" argument
+- have one method that adds an "employee" to its list of employees
 
-Create an instance of your "Employer" class
-
-Create 3 instances of your "Employee" class.
-
-Add the 3 employee instances to the employer instance.
-
-Call the "get_average_salary" method on your instance of the "Employer" class and print the result.
+The "Employee" class should:
+- have an "init" method with a "name", "age" and "salary" argument
+- have a method called "get_salary" that returns the employee salary
 """
