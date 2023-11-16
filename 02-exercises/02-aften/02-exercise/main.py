@@ -18,7 +18,12 @@ class Car:
         self.speed = speed
 
     def start(self):
-        print("Wrooom!")
+        print(f"Wrooom! My {self.brand} is driving")
+
+    def stop(self):
+        print("Stoooooppp ...")
 
 
-c = Car("Audi", 300)
+c = Car("Volvo", 250)
+c.start()
+c.stop()

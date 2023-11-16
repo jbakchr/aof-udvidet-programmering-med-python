@@ -22,19 +22,30 @@ class Car:
         self.speed = speed
 
     def start(self):
-        print("Wrooom!")
+        print(f"Wrooom! My {self.brand} is driving")
 
     def gear_up(self):
-        if self.gear != 6:
-            self.gear += 1
-            print(f"Your {self.brand} is now in gear {self.gear}")
-
-    def gear_down(self):
-        if self.gear != 0:
-            self.gear -= 1
-            print(f"Your {self.brand} is now in gear {self.gear}")
+        for i in range(1, 7):
+            if self.gear != 6:
+                self.gear = i
+                print(f"Gear: {self.gear}")
 
 
-c = Car("Audi", 300)
+c = Car("Volvo", 250)
 c.gear_up()
-c.gear_down()
+c.gear_up()
+c.gear_up()
+c.gear_up()
+c.gear_up()
+c.gear_up()
+c.gear_up()
+c.gear_up()
+c.gear_up()
+c.gear_up()
+c.gear_up()
+c.gear_up()
+c.gear_up()
+c.gear_up()
+c.gear_up()
+c.gear_up()
+c.gear_up()
