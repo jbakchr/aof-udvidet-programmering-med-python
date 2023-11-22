@@ -1,5 +1,5 @@
 """
-Exercise 3
+Exercise 4
 
 Firstly, create these 2 classes:
 - An "Employer" class
@@ -14,3 +14,6 @@ The "Employee" class should:
 - have an "init" method with a "name", "age" and "salary" argument
 - have a method called "get_salary" that returns the employee salary
 """
+
+for i in range(0, 7):
+    c.gear_up()

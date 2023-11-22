@@ -12,10 +12,12 @@ If the method decreases the gear then print which gear the car is now in.
 
 Create an instance of your car class and play around calling your two new methods on it.
 """
+import time
 
 
 class Car:
     gear = 0
+    maximum = 6
 
     def __init__(self, brand, speed):
         self.brand = brand
@@ -25,24 +27,13 @@ class Car:
         print(f"Wrooom! My {self.brand} is driving")
 
     def gear_up(self):
-        for i in range(1, 7):
+        for i in range(1, self.maximum + 1):
             if self.gear != 6:
                 self.gear = i
                 print(f"Gear: {self.gear}")
 
 
 c = Car("Volvo", 250)
-c.gear_up()
-c.gear_up()
-c.gear_up()
-c.gear_up()
-c.gear_up()
-c.gear_up()
-c.gear_up()
-c.gear_up()
-c.gear_up()
-c.gear_up()
-c.gear_up()
 c.gear_up()
 c.gear_up()
 c.gear_up()
