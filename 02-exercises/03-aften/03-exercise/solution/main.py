@@ -1,7 +1,7 @@
 """
-Exercise 7
+Exercise 3
 
-Based on your classes from exercise 6 please do the following:
+Based on your classes from exercise 2 please do the following:
 
 Add the "init" method to the "Student" and make it take an additional "grade" argument.
 

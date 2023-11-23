@@ -1,5 +1,5 @@
 """
-Exercise 6
+Exercise 2
 
 Create a "Person" class that act as the "Parent" class which will take these arguments:
 - name
