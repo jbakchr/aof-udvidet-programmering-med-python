@@ -21,3 +21,44 @@ Create as many instances of your "Book" class as you like and add them to your "
 
 Lastly, call the "get_total_price" method on your "BookStore" and print some text about the total price of the books.
 """
+
+
+class BookStore:
+    books = []
+
+    def __init__(self, name, max_books):
+        self.name = name
+        self.max_books = max_books
+
+    def add_book(self, book):
+        if len(self.books) != self.max_books:
+            self.books.append(book)
+
+    def get_total_price(self):
+        total = 0
+        for book in self.books:
+            total += book.get_price()
+        return total
+
+
+class Book:
+    def __init__(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price = price
+
+    def get_price(self):
+        return self.price
+
+
+bs = BookStore("My Book Store", 5)
+
+b1 = Book("Den gamle mand og havet", "Ernest Hemingway", 150)
+b2 = Book("Processen", "Franz Kafka", 129)
+b3 = Book("idioten", "En eller anden russer ..", 399)
+
+bs.add_book(b1)
+bs.add_book(b2)
+bs.add_book(b3)
+
+print(bs.get_total_price())
