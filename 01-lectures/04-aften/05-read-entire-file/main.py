@@ -3,3 +3,5 @@ f = open(
     "r",
 )
 print(f.read())
+
+f.close()

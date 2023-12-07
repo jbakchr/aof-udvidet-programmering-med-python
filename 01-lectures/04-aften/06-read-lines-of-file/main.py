@@ -16,3 +16,5 @@ print(f.readline())
 # read remaining lines by use of a loop
 for text in f:
     print(text)
+
+f.close()
